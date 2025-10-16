@@ -52,10 +52,44 @@ Model Waveform
 <img width="706" height="167" alt="image" src="https://github.com/user-attachments/assets/bff0d8fd-d679-444e-af37-0b34585853c1" />
 
 Program
+am = 5.6;
+fm = 464;
+ac = 11.2;
+fc = 4640;
+fs = 46400;
+t = 0:1/fs:3/fm;
+
+m1=am*cos(2*3.14*fm*t);
+subplot(2,2,1);
+plot(t,m1);
+title('Message signal m1');
+
+c1=ac*cos(2*3.14*fc*t);
+subplot(2,2,2);
+plot(t,c1);
+title('Carrier signal c1');
+
+m2=am*sin(2*3.14*fm*t);
+
+c2=ac*sin(2*3.14*fc*t);
+
+s1=c1.*m1;
+s2=c2.*m2;
+slsb=s1+s2;
+subplot(2,2,3);
+plot(t,slsb);
+title('S LSB');
+
+susb=s1-s2;
+subplot(2,2,4);
+plot(t,susb);
+title('S USB');
 
 OUTPUT WAVEFORM
+<img width="757" height="673" alt="image" src="https://github.com/user-attachments/assets/af71d9e6-39df-4f63-a8a5-8078c83f719a" />
 
 TABULATION
+<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/7651e0ea-5779-4180-a8b5-572e973abccd" />
 
 
 
