@@ -89,13 +89,7 @@ OUTPUT WAVEFORM
 <img width="757" height="673" alt="image" src="https://github.com/user-attachments/assets/af71d9e6-39df-4f63-a8a5-8078c83f719a" />
 
 TABULATION
-
-
-
-
-
-
-
+<img width="1280" height="888" alt="image" src="https://github.com/user-attachments/assets/fc00cf99-5315-46e7-99ac-6d9a52bcc7d4" />
 
 
 RESULT:
